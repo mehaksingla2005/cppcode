@@ -1,3 +1,5 @@
+//Floor of 'x' is the largest element in the array which is smaller than or equal to 'x'.
+//Ceiling of 'x' is the smallest element in the array greater than or equal to 'x'.
 int getFloor(vector<int> &a, int n, int x){
 	int s=0;
 	int e=n-1;
