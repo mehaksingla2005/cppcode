@@ -1,0 +1,24 @@
+//hashing method to find missing element in an array
+#include <iostream>
+using namespace std;
+
+int main() {
+    // hashing method to find missing element
+
+    int arr[4] = {1, 2, 3, 4};
+    int n = 4;
+    int hash[6] = {0}; // Assuming the range of elements is from 0 to 4
+
+    for (int i = 0; i < n; i++) {
+        hash[arr[i]] = 1;
+    }
+
+    for (int i = 1; i < n + 2; i++) { // Check for elements from 0 to n
+        if (hash[i] == 0) {
+            cout << "Missing element: " << i << endl;
+            break; // exit loop after finding the missing element
+        }
+    }
+
+    return 0;
+}
